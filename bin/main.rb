@@ -1,4 +1,7 @@
 #!/usr/bin/env ruby
+
+require_relative "board"
+
 # TicTacToe
 def main
   puts "Welcome to TicTacToe \n\n"
@@ -23,3 +26,5 @@ def main
 end
 
 main
+game = Board.new
+game.show
