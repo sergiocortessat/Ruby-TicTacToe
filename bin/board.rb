@@ -25,8 +25,15 @@ class Board
     cells[number - 1] = number
   end
 
+  def full?
+    cells.all? { |cell| cell =~ /[^0-9]/ }
+  end
+
+  def winner?
+    WINNING_COMBOS.any? do |combo|
+      [cells[combo[0]], cells[combo[1]], cells[combo[2]]].uniq.length == 1
+    end
+  end
 end
 
-game = Board.new
-# game.show
-game.valid_move?(1)
+
