@@ -22,11 +22,11 @@ class Board
   end
 
   def valid_move?(number)
-    cells[number - 1] = number
+    cells[number - 1] == number
   end
 
   def full?
-    cells.all? { |cell| cell == "X" || cell == "O" }
+    cells.all? { |cell| %w[X O].include?(cell) }
   end
 
   def winner?
