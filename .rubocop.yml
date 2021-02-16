@@ -48,3 +48,5 @@ Metrics/PerceivedComplexity:
   Enabled: false
 Lint/NestedMethodDefinition:
   Enabled: false
+Style/GlobalVars:
+  Enabled: false

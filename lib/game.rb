@@ -3,36 +3,36 @@ require_relative 'board'
 # TicTacToe
 
 class Game
-  attr_reader :first_player, :second_player, :board, :current_player, :display
+  attr_reader :first_player, :second_player, :board, :current_player
 
   def initialize
     @board = Board.new
     @first_player = nil
     @second_player = nil
     @current_player = nil
-    @display = Intro.new
+    # @display = Intro.new
   end
 
   def play
-    display.introduction
-    display.display
+    introduction
+    display
     board.show
     game_set_up
     swtich_player(current_player)
   end
 
   def game_set_up
-    @first_player = [display.player1, display.player1_symbol]
-    @second_player = [display.player2, display.player2_symbol]
+    @first_player = [$player1, $player1_symbol]
+    @second_player = [$player2, $player2_symbol]
     @current_player = first_player
   end
 
   def user_input(current_player)
-    move = display.user_input_text(current_player[0])
+    move = user_input_text(current_player[0])
     if board.valid_move?(move)
       board.update_board(move, current_player[1])
     else
-      display.if_invalid(current_player[0])
+      if_invalid(current_player[0])
       user_input(current_player)
     end
   end
@@ -50,9 +50,9 @@ class Game
       board.show
     end
     if board.full?
-      display.tie
+      tie
     else
-      display.win(current_player[0])
+      win(current_player[0])
     end
   end
 end
