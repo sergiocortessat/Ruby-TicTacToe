@@ -50,4 +50,12 @@ class Intro
   def if_invalid(name)
     puts "Invalid move #{name}. Please enter a valid move"
   end
+
+  def user_input_text(name)
+    puts ' '
+    puts "#{name}. Please choose a number from 1 - 9 \n\n"
+    move = gets.chomp.to_i
+    puts ' '
+    move
+  end
 end

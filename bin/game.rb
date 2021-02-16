@@ -19,7 +19,6 @@ class Game
     board.show
     game_set_up
     swtich_player(current_player)
-    repeat
   end
 
   def game_set_up
@@ -29,10 +28,7 @@ class Game
   end
 
   def user_input(current_player)
-    puts ' '
-    puts "#{current_player[0]}. Please choose a number from 1 - 9 \n\n"
-    move = gets.chomp.to_i
-    puts ' '
+    move = display.user_input_text(current_player[0])
     if board.valid_move?(move)
       board.update_board(move, current_player[1])
     else

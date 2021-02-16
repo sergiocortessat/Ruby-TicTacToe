@@ -8,6 +8,7 @@ require_relative 'board'
 def play_new_game
   startt = Game.new
   startt.play
+  repeat
 end
 
 def repeat
