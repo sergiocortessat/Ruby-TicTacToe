@@ -46,7 +46,5 @@ Metrics/CyclomaticComplexity:
   Enabled: false
 Metrics/PerceivedComplexity:
   Enabled: false
-Lint/LambdaWithoutLiteralBlock:
-  Enabled: false
 Lint/NestedMethodDefinition:
   Enabled: false
