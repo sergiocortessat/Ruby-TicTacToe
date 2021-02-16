@@ -29,11 +29,19 @@ class Intro
     puts 'Second, The Player2. Plese enter your name'
     @player2 = gets.chomp.capitalize
     puts "Your name is #{player2}"
-    player2_symbol = if player1_symbol == 'X'
-                       'O'
-                     else
-                       'X'
-                     end
+    @player2_symbol = if player1_symbol == 'X'
+                        'O'
+                      else
+                        'X'
+                      end
     puts "#{player2} your symbol is #{player2_symbol}"
+  end
+
+  def tie
+    puts 'Its a draw :))'
+  end
+
+  def win
+    puts 'Congragulations'
   end
 end

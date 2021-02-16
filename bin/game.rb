@@ -35,7 +35,6 @@ class Game
   end
 
   def swtich_player(current_player)
-    second_player = display.player2_symbol
     until board.full?
       user_input(current_player)
       current_player = if current_player == first_player
@@ -44,6 +43,12 @@ class Game
                          first_player
                        end
       board.show
+      break if board.winner?
+    end
+    if board.full?
+      display.tie
+    else
+      display.win
     end
   end
 
