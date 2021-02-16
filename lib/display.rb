@@ -11,7 +11,7 @@ class Intro
 
   def introduction
     puts "Welcome to TicTacToe \n\n"
-    puts "First, The Player1. Plese enter your name\n\n"
+    puts "Player1. Please enter your name\n\n"
   end
 
   def display
@@ -28,9 +28,14 @@ class Intro
     end
 
     puts "#{@player1} your symbol is #{@player1_symbol}\n\n"
-    puts "Second, The Player2. Plese enter your name\n\n"
+    puts "The Player2. Plese enter your name\n\n"
     @player2 = gets.chomp.capitalize
+    until player2 != player1
+      puts 'Player2, Please select a different name'
+      @player2 = gets.chomp.capitalize
+    end
     puts "Your name is #{player2}\n\n"
+
     @player2_symbol = if player1_symbol == 'X'
                         'O'
                       else

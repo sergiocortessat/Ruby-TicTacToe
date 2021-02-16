@@ -1,5 +1,5 @@
-require_relative '../bin/display'
-require_relative '../bin/board'
+require_relative 'display'
+require_relative 'board'
 # TicTacToe
 
 class Game

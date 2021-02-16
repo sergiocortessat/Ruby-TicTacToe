@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
-require_relative 'display'
+require_relative '../lib/display'
 require_relative '../lib/game'
-require_relative 'board'
+require_relative '../lib/board'
 
 def play_new_game
   startt = Game.new
