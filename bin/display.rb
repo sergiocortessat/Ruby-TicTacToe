@@ -29,7 +29,6 @@ class Intro
     puts 'Second, The Player2. Plese enter your name'
     @player2 = gets.chomp.capitalize
     puts "Your name is #{player2}"
-    player2_symbol = ''
     player2_symbol = if player1_symbol == 'X'
                        'O'
                      else

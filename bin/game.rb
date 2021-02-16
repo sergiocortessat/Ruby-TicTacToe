@@ -18,37 +18,42 @@ class Game
     display.display
     board.show
     game_set_up
-    user_input(current_player)
-    swtich_player
+    swtich_player(current_player)
   end
 
   def game_set_up
     @first_player = display.player1_symbol
     @second_player = display.player2_symbol
+    @current_player = first_player
   end
 
   def user_input(current_player)
-    puts 'Please choose a number from 1 - 9'
+    puts "#{current_player}Please choose a number from 1 - 9"
     move = gets.chomp.to_i
     board.update_board(move, current_player)
     board.show
   end
 
-  def swtich_player
-    @current_player = first_player
-    user_input(current_player) until board.full?
-    board.show
-
-    @current_player = swtich
-  end
-
-  def swtich
-    if current_player == first_player
-      second_player
-    else
-      first_player
+  def swtich_player(current_player)
+    second_player = display.player2_symbol
+    until board.full?
+      user_input(current_player)
+      current_player = if current_player == first_player
+                         second_player
+                       else
+                         first_player
+                       end
+      board.show
     end
   end
+
+  # def swtich
+  #   if current_player == first_player
+  #     second_player
+  #   else
+  #     first_player
+  #   end
+  # end
 
   # def current_player
   #   turn_count.even? ? 'X' : 'O'
