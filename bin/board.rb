@@ -18,7 +18,7 @@ class Board
   end
 
   def update_board(number, symbol)
-    cells[number] = symbol
+    cells[number - 1] = symbol
   end
 
   def valid_move?(number)
