@@ -58,18 +58,5 @@ class Game
     else
       display.win(current_player[0])
     end
-
-    def repeat
-      puts 'Enter |"ok"| to play again or |"no"| to quit the game'
-      input = gets.chomp.downcase
-      case input
-      when 'ok'
-        play
-      when 'no'
-        puts 'Thanks for playing'
-      else
-        repeat
-      end
-    end
   end
 end
