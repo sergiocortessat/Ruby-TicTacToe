@@ -1,3 +1,4 @@
+
 class Board
   attr_reader :cells
 
@@ -18,15 +19,15 @@ class Board
   end
 
   def update_board(number, symbol)
-    cells[number] = symbol
+    cells[number - 1] = symbol
   end
 
   def valid_move?(number)
-    cells[number - 1] = number
+    cells[number - 1] == number
   end
 
   def full?
-    cells.all? { |cell| cell =~ /[^0-9]/ }
+    cells.all? { |cell| %w[X O].include?(cell) }
   end
 
   def winner?
