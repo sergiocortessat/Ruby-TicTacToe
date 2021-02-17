@@ -25,9 +25,12 @@ Terminal or similar to execute the program.
 
 ## Install
 
-Download a copy of the enumerables.rb file
+Download a copy of the TicTacToe repository
 
 ## Usage
+
+To play the game, open the terminal and direct yourself to the main folder root of TicTacToe.
+Once you are in the main root file, enter in the terminal the command: 
 
 Place the file on the same folder as your project and include it on your script
 Use the different methods like so
