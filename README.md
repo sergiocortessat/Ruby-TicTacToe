@@ -48,7 +48,7 @@ Download a copy of the TicTacToe repository
  10. The game will promp you to play once again: press "ok". Or to end the game: press "no"
  11. Enjoy
  
- Board:  
+ ## Board:  
  
  |1| |2| |3|
  -----------
@@ -57,7 +57,7 @@ Download a copy of the TicTacToe repository
  |7| |8| |9|
  -----------
 
- Winning combos:
+## Winning combos:
 
  |X| |X| |X|  
  -----------
