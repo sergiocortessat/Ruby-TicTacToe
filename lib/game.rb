@@ -16,7 +16,7 @@ class Game
   def play
     introduction
     display
-    board.show
+    show
     game_set_up
     swtich_player(current_player)
   end
@@ -47,7 +47,7 @@ class Game
                        else
                          first_player
                        end
-      board.show
+      show
     end
     if board.full?
       tie
