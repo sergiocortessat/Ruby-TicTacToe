@@ -14,10 +14,10 @@
 
 ## Getting Started
 
-First ensure that you have ruby installed on your local machine.
+First, ensure that you have ruby installed on your local machine.
 To get a local copy up and running follow these simple example steps.
 
-## Prequisites
+## Prerequisites
 
 Ruby installed on your local machine.
 Code editor (like VSCode)
@@ -32,14 +32,14 @@ Download a copy of the TicTacToe repository
 4. Copy the link
 5. Direct yourself to the main folder where you wish to clone the repository
 6. Open the terminal in this path.
-7. In the terminal, place: git clone [repository HTTPS or SSH link] (Dont close the terminal)
-8. Note: The repository should now be cloneD and present in your folder
-9. In the terminal, direct yourself to the Ruby-TicTacToe folder. You can use cd ~Ruby-TicTacToe
+7. In the terminal, place: git clone [repository HTTPS or SSH link] (Don't close the terminal)
+8. Note: The repository should now be cloned and present in your folder
+9. In the terminal, direct yourself to the Ruby-TicTacToe folder. You can use: cd Ruby-TicTacToe
 
 ## Usage
 
-- To play the game, open the terminal and direct yourself to the main folder root of TicTacToe. (AS SHOWN ABOVE)
-- Once you are in the main root file, enter in the terminal the command: ruby bin/main.
+- To play the game, open the terminal and direct yourself to the main folder root of TicTacToe. (AS SHOWN ABOVE ON STEP 9)
+- Once you are in the main root file, to run the program, enter in the terminal the command: ruby bin/main.rb
 - Follow the game instructions
 
 ## Instructions
@@ -143,13 +143,13 @@ Download a copy of the TicTacToe repository
 
 👤 Sergio Cortes Satizabal
 
-- GitHub: [@githubhandle](https://github.com/sergiocortessat)
-- Twitter: [@twitterhandle](https://twitter.com/sergiocortessat)
+- GitHub: [@sergiocortessat](https://github.com/sergiocortessat)
+- Twitter: [@sergiocortessat](https://twitter.com/sergiocortessat)
 
 👤 Ari Karim
 
-- GitHub: [@githubhandle](https://github.com/arikarim)
-- Twitter: [@twitterhandle](https://twitter.com/Ari71549490)
+- GitHub: [@arikarim](https://github.com/arikarim)
+- Twitter: [@Ari71549490](https://twitter.com/Ari71549490)
 
 ## Show your support
 
