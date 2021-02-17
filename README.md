@@ -26,10 +26,19 @@ Terminal or similar to execute the program.
 ## Install
 
 Download a copy of the TicTacToe repository
+1. Direct to the main branch of the repository
+2. Click on "Code"
+3. Select the option to clone. HTTPS or SSH
+4. Copy the link
+5. Direct yourself to the main folder where you wish to clone the repository
+6. Open the terminal in this path.
+7. In the terminal, place: git clone [repository HTTPS or SSH link] (Dont close the terminal)
+8. Note: The repository should now be cloneD and present in your folder
+9. In the terminal, direct yourself to the Ruby-TicTacToe folder. You can use cd ~Ruby-TicTacToe
 
 ## Usage
 
-- To play the game, open the terminal and direct yourself to the main folder root of TicTacToe.
+- To play the game, open the terminal and direct yourself to the main folder root of TicTacToe. (AS SHOWN ABOVE)
 - Once you are in the main root file, enter in the terminal the command: ruby bin/main.
 - Follow the game instructions
 
@@ -141,12 +150,6 @@ Download a copy of the TicTacToe repository
 
 - GitHub: [@githubhandle](https://github.com/arikarim)
 - Twitter: [@twitterhandle](https://twitter.com/Ari71549490)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/sergiocortessat/Ruby-Milestone1-BubleSort/issues).
 
 ## Show your support
 
