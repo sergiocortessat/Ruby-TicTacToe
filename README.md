@@ -58,6 +58,7 @@ Download a copy of the TicTacToe repository
  -----------
 
 ## Winning combos:
+# 1
 
  |X| |X| |X|  
  -----------
@@ -66,12 +67,16 @@ Download a copy of the TicTacToe repository
  |7| |8| |9|
  -----------
 
+ # 2
+
  |1| |2| |3|
  -----------
  |X| |X| |X|
  -----------
  |7| |8| |9|
  -----------
+
+# 3
 
  |1| |2| |3|
  -----------
@@ -80,12 +85,16 @@ Download a copy of the TicTacToe repository
  |X| |X| |X|
  -----------
 
+# 4
+
  |X| |2| |3|
  -----------
  |X| |5| |6|
  -----------
  |X| |8| |9|
  -----------
+
+# 5
 
  |1| |X| |3|
  -----------
@@ -94,6 +103,7 @@ Download a copy of the TicTacToe repository
  |7| |X| |9|
  -----------
 
+# 6
 
  |1| |2| |X|
  -----------
@@ -102,12 +112,16 @@ Download a copy of the TicTacToe repository
  |7| |8| |X|
  -----------
 
+# 7
+
  |1| |2| |X|
  -----------
  |4| |X| |6|
  -----------
  |X| |8| |9|
  -----------
+
+# 8
 
  |X| |2| |3|
  -----------
