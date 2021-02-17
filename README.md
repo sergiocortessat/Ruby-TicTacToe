@@ -37,8 +37,8 @@ Download a copy of the TicTacToe repository
 
  Once the game has started
  1. The first player places their name
- 2. The First player needs to select a symbol from X or O
- 3. The Second player needs to enter their name
+ 2. The first player needs to select a symbol from X or O
+ 3. The second player needs to enter their name
  4. Symbol for the second player is assigned automatically
  5. Game starts - Makes player1 choose a section and place his symbol (1-9)
  6. If the number you entered is already taken, you will be forced to choose again.
