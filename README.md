@@ -151,6 +151,13 @@ Download a copy of the TicTacToe repository
 - GitHub: [@arikarim](https://github.com/arikarim)
 - Twitter: [@Ari71549490](https://twitter.com/Ari71549490)
 
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/sergiocortessat/Ruby-TicTacToe/issues).
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
