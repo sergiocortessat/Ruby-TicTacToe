@@ -36,16 +36,16 @@ Download a copy of the TicTacToe repository
 ## Instructions
 
  Once the game has started
- 1. First player place the name
- 2. First player need to select a symbol from X or O
- 3. Second player needs to enter the name
- 4. Symbol for second player is assgined automatically
- 5. Game starts - Makes player1 to chooose a section to place his symbol (1-9)
- 6. If the number you entered is taken, you will be force to chooose again
- 7. Player 2 will now select an space in the board to place the symbol (same rules apply as step 6)
- 8. Players need to obtain a winnin combo using their symbol (CHECK BELOW FOR WINNING COMBOS)
+ 1. The first player places their name
+ 2. The First player needs to select a symbol from X or O
+ 3. The Second player needs to enter their name
+ 4. Symbol for the second player is assigned automatically
+ 5. Game starts - Makes player1 choose a section and place his symbol (1-9)
+ 6. If the number you entered is already taken, you will be forced to choose again.
+ 7. Player 2 will now select a space in the board to place the symbol (the same rules apply as step 6)
+ 8. Players need to obtain a winning combo using their symbol (CHECK BELOW FOR WINNING COMBOS)
  9. If none of the players can get a winning combo, the game will simply draw with no winners. 
- 10. The game will promp you to play once again: press "ok". Or to end the game: press "no"
+ 10. The game will prompt you to play once again: press "ok". Or to end the game: press "no"
  11. Enjoy
  
  ## Board:  
