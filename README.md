@@ -33,6 +33,88 @@ Download a copy of the TicTacToe repository
 - Once you are in the main root file, enter in the terminal the command: ruby bin/main.
 - Follow the game instructions
 
+## Instructions
+
+ Once the game has started
+ 1. First player place the name
+ 2. First player need to select a symbol from X or O
+ 3. Second player needs to enter the name
+ 4. Symbol for second player is assgined automatically
+ 5. Game starts - Makes player1 to chooose a section to place his symbol (1-9)
+ 6. If the number you entered is taken, you will be force to chooose again
+ 7. Player 2 will now select an space in the board to place the symbol (same rules apply as step 6)
+ 8. Players need to obtain a winnin combo using their symbol (CHECK BELOW FOR WINNING COMBOS)
+ 9. If none of the players can get a winning combo, the game will simply draw with no winners. 
+ 10. The game will promp you to play once again: press "ok". Or to end the game: press "no"
+ 11. Enjoy
+ 
+ Board:  
+ 
+ |1| |2| |3|
+ -----------
+ |4| |5| |6|
+ -----------
+ |7| |8| |9|
+ -----------
+
+ Winning combos:
+
+ |X| |X| |X|  
+ -----------
+ |4| |5| |6|  
+ -----------
+ |7| |8| |9|
+ -----------
+
+ |1| |2| |3|
+ -----------
+ |X| |X| |X|
+ -----------
+ |7| |8| |9|
+ -----------
+
+ |1| |2| |3|
+ -----------
+ |4| |5| |6|
+ -----------
+ |X| |X| |X|
+ -----------
+
+ |X| |2| |3|
+ -----------
+ |X| |5| |6|
+ -----------
+ |X| |8| |9|
+ -----------
+
+ |1| |X| |3|
+ -----------
+ |4| |X| |6|
+ -----------
+ |7| |X| |9|
+ -----------
+
+
+ |1| |2| |X|
+ -----------
+ |4| |5| |X|
+ -----------
+ |7| |8| |X|
+ -----------
+
+ |1| |2| |X|
+ -----------
+ |4| |X| |6|
+ -----------
+ |X| |8| |9|
+ -----------
+
+ |X| |2| |3|
+ -----------
+ |4| |X| |6|
+ -----------
+ |7| |8| |X|
+ -----------
 
 ## Authors
 
