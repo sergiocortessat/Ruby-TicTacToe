@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Week 1 Enumerables
+# Week 2  TicTacToe
 
 ## Screenshot
 
@@ -10,13 +10,14 @@
 
 - Ruby
 - Linters
+- OOP
 
 ## Getting Started
 
-First ensure that you have ruby installed on your local machine.
+First, ensure that you have ruby installed on your local machine.
 To get a local copy up and running follow these simple example steps.
 
-## Prequisites
+## Prerequisites
 
 Ruby installed on your local machine.
 Code editor (like VSCode)
@@ -24,95 +25,137 @@ Terminal or similar to execute the program.
 
 ## Install
 
-Download a copy of the enumerables.rb file
+Download a copy of the TicTacToe repository
+1. Direct to the main branch of the repository
+2. Click on "Code"
+3. Select the option to clone. HTTPS or SSH
+4. Copy the link
+5. Direct yourself to the main folder where you wish to clone the repository
+6. Open the terminal in this path.
+7. In the terminal, place: git clone [repository HTTPS or SSH link] (Don't close the terminal)
+8. Note: The repository should now be cloned and present in your folder
+9. In the terminal, direct yourself to the Ruby-TicTacToe folder. You can use: cd Ruby-TicTacToe
 
 ## Usage
 
-Place the file on the same folder as your project and include it on your script
-Use the different methods like so
+- To play the game, open the terminal and direct yourself to the main folder root of TicTacToe. (AS SHOWN ABOVE ON STEP 9)
+- Once you are in the main root file, to run the program, enter in the terminal the command: ruby bin/main.rb
+- Follow the game instructions
 
-### my_each
+## Instructions
 
-```testarray.my_each { |x| puts "The number is #{x}" }```
+ Once the game has started
+ 1. The first player places their name
+ 2. The first player needs to select a symbol from X or O
+ 3. The second player needs to enter their name
+ 4. Symbol for the second player is assigned automatically
+ 5. Game starts - Makes player1 choose a section and place his symbol (1-9)
+ 6. If the number you entered is already taken, you will be forced to choose again.
+ 7. Player 2 will now select a space in the board to place the symbol (the same rules apply as step 6)
+ 8. Players need to obtain a winning combo using their symbol (CHECK BELOW FOR WINNING COMBOS)
+ 9. If none of the players can get a winning combo, the game will simply draw with no winners. 
+ 10. The game will prompt you to play once again: press "ok". Or to end the game: press "no"
+ 11. Enjoy
+ 
+ ## Board:  
+ 
+ |1| |2| |3|
+ -----------
+ |4| |5| |6|
+ -----------
+ |7| |8| |9|
+ -----------
 
-Returns every item of your array
+## Winning combos:
+# 1
 
-### my_each_with_index
+ |X| |X| |X|  
+ -----------
+ |4| |5| |6|  
+ -----------
+ |7| |8| |9|
+ -----------
 
-```testarray.my_each_with_index { |val,index| puts "index: #{index} for #{val}" }```
+ # 2
 
-Returns every item of your array along with the index
+ |1| |2| |3|
+ -----------
+ |X| |X| |X|
+ -----------
+ |7| |8| |9|
+ -----------
 
-### my_select
+# 3
 
-```testarray.my_select { |n| n.even? }```
+ |1| |2| |3|
+ -----------
+ |4| |5| |6|
+ -----------
+ |X| |X| |X|
+ -----------
 
-Returns every item of the array that matches your query
+# 4
 
-### my_all
+ |X| |2| |3|
+ -----------
+ |X| |5| |6|
+ -----------
+ |X| |8| |9|
+ -----------
 
-```puts testarray.my_all { |n| n < 20 }```
+# 5
 
-Returns true if all the elements of your array match the query
+ |1| |X| |3|
+ -----------
+ |4| |X| |6|
+ -----------
+ |7| |X| |9|
+ -----------
 
-### my_none
+# 6
 
-```puts testarray.my_none { |n| n < 20 }```
+ |1| |2| |X|
+ -----------
+ |4| |5| |X|
+ -----------
+ |7| |8| |X|
+ -----------
 
-Returns true if all the elements of your array don't match the query
+# 7
 
-### my_any
+ |1| |2| |X|
+ -----------
+ |4| |X| |6|
+ -----------
+ |X| |8| |9|
+ -----------
 
-```puts testarray.my_any { |n| n == 20 }```
+# 8
 
-Returns true if at least one element of the array matches the query
-
-### my_count
-
-```puts testarray.my_count { |n| n.even? }```
-
-Returns the number of elements in your array that match the query
-
-### my_map
-
-```square = Proc.new { |x| x**2 }```
-
-```puts testarray.my_map { |x| x**2 }```
-
-```puts testarray.my_map(square)```
-
-Can be used with a block or a proc (prioritizes the proc). Return the modified elements according to the query
-
-### my_inject
-
-```puts testarray.my_inject { |sum, n| sum * n }```
-
-Returns the sum of all the elements according to the query
-
-### multiply_els
-
-```puts multiply_els([2,4,5])```
-
-This method uses my_map to multiply the elements of an array with a sum
-
+ |X| |2| |3|
+ -----------
+ |4| |X| |6|
+ -----------
+ |7| |8| |X|
+ -----------
 
 ## Authors
 
 👤 Sergio Cortes Satizabal
 
-- GitHub: [@githubhandle](https://github.com/sergiocortessat)
-- Twitter: [@twitterhandle](https://twitter.com/sergiocortessat)
+- GitHub: [@sergiocortessat](https://github.com/sergiocortessat)
+- Twitter: [@sergiocortessat](https://twitter.com/sergiocortessat)
 
-👤 Gregorio Rábago Sainz
+👤 Ari Karim
 
-- GitHub: [@githubhandle](https://github.com/greg0109)
-- Twitter: [@twitterhandle](https://twitter.com/greg_0109)
+- GitHub: [@arikarim](https://github.com/arikarim)
+- Twitter: [@Ari71549490](https://twitter.com/Ari71549490)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/sergiocortessat/Ruby-Milestone1-BubleSort/issues).
+Feel free to check the [issues page](https://github.com/sergiocortessat/Ruby-TicTacToe/issues/5).
 
 ## Show your support
 
