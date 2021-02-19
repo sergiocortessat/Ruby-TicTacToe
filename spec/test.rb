@@ -1,5 +1,6 @@
 require_relative '../lib/board'
 require_relative '../bin/main'
+require_relative '../bin/Rspec.file'
 # require_relative '../lib/display'
 # require_relative '../lib/game'
 
@@ -37,25 +38,18 @@ describe Board do
   end
 end
 
-
-
-def swtich_player(current_player)
+describe '#swtich_player' do
+  it 'swtiches players' do
+  first_player = 'denis'
+  second_player = 'ari'
   current_player = first_player
-    current_player = if current_player == first_player
-                       second_player
-                     else
-                       first_player
-                     end
+    expect(swtich_player(current_player)).to_not eql(second_player)
+  end
 end
 
-describe Game do
-  let(:game) { Game.new }
-
-  describe '#swtich_player' do
-    it 'swtiches players' do
-      first_player = "ari"
-      second_player = "aram"
-      expect(game.swtich_player(first_player)).to_not eql(second_player)
-    end
+describe'#user_input' do
+  it 'checks valid moves and updates the board' do
+    current_player = 2
+    expect(user_input(current_player)).to eql(true)
   end
 end
