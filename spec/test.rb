@@ -47,9 +47,36 @@ describe '#swtich_player' do
   end
 end
 
-describe'#user_input' do
-  it 'checks valid moves and updates the board' do
-    current_player = 2
-    expect(user_input(current_player)).to eql(true)
+describe '#tie' do
+  it 'displays draw' do
+    expect(tie).to eql('Its a draw :))')
+  end
+end
+
+describe '#win' do
+  it 'displays winner' do
+    name = 'denis'
+    expect(win(name)).to eql(puts "Congragulations #{name}")
+  end
+end
+
+describe '#if_invalid?' do
+  it 'checks valid input' do
+    name = 'denis'
+    expect(win(name)).to eql(puts "Invalid move #{name}. Please enter a valid move")
+  end
+end
+
+describe '#user_input_text' do
+  it 'it asks user for input' do
+    name = 'denis'
+    expect(user_input_text(name)).to eql(gets.chomp.to_i)
+  end
+end
+
+describe '#repeat' do
+  it 'it asks user for repeating the game' do
+    input = gets.chomp.downcase
+    expect(repeat).to eql(input = gets.chomp.downcase)
   end
 end
