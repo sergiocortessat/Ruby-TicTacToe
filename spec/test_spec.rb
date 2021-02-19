@@ -65,13 +65,6 @@ describe '#if_invalid?' do
   end
 end
 
-describe '#user_input_text' do
-  it 'it asks user for input' do
-    name = 'denis'
-    expect(user_input_text(name)).to eql(gets.chomp.to_i)
-  end
-end
-
 describe '#introduction' do
   it 'it shows the introduction' do
     expect(introduction).to eql(puts("Welcome to TicTacToe \n\n"))
