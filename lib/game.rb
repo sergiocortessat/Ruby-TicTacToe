@@ -55,4 +55,15 @@ class Game
       win(current_player[0])
     end
   end
+  def swtich_player(current_player)
+    current_player = first_player
+    first_player = "ari"
+    second_player = "aram"
+      current_player = if current_player == first_player
+                         second_player
+                       else
+                         first_player
+                       end
+  end
+  
 end

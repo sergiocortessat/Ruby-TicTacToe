@@ -57,7 +57,7 @@ def display
 end
 
 def tie
-  puts 'Its a draw :))'
+  'Its a draw :))'
 end
 
 def win(name)
@@ -89,4 +89,9 @@ def repeat
   end
 end
 
-play_new_game
+# play_new_game
+def ok
+  true
+end
+
+# play_new_game
