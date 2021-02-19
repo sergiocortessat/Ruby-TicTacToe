@@ -78,5 +78,4 @@ end
 def ok
   true
 end
-
 # play_new_game

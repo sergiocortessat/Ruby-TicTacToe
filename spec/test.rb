@@ -1,8 +1,7 @@
+#!/usr/bin/env ruby
 require_relative '../lib/board'
 require_relative '../bin/main'
-require_relative '../bin/Rspec.file'
-# require_relative '../lib/display'
-# require_relative '../lib/game'
+require_relative '../bin/rspec_file'
 
 describe Board do
   let(:board) { Board.new }
@@ -79,5 +78,3 @@ describe '#introduction' do
     expect(introduction).to eql(puts("Welcome to TicTacToe \n\n"))
   end
 end
-
-# Finished
