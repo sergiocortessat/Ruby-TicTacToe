@@ -50,3 +50,7 @@ Lint/NestedMethodDefinition:
   Enabled: false
 Style/GlobalVars:
   Enabled: false
+Lint/ShadowedArgument:
+  Enabled: false
+Lint/UselessAssignment:
+  Enabled: false

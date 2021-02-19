@@ -40,9 +40,9 @@ end
 
 describe '#swtich_player' do
   it 'swtiches players' do
-  first_player = 'denis'
-  second_player = 'ari'
-  current_player = first_player
+    first_player = 'denis'
+    second_player = 'ari'
+    current_player = first_player
     expect(swtich_player(current_player)).to_not eql(second_player)
   end
 end
@@ -56,14 +56,14 @@ end
 describe '#win' do
   it 'displays winner' do
     name = 'denis'
-    expect(win(name)).to eql(puts "Congragulations #{name}")
+    expect(win(name)).to eql(puts("Congragulations #{name}"))
   end
 end
 
 describe '#if_invalid?' do
   it 'checks valid input' do
     name = 'denis'
-    expect(win(name)).to eql(puts "Invalid move #{name}. Please enter a valid move")
+    expect(win(name)).to eql(puts("Invalid move #{name}. Please enter a valid move"))
   end
 end
 
@@ -74,9 +74,8 @@ describe '#user_input_text' do
   end
 end
 
-describe '#repeat' do
-  it 'it asks user for repeating the game' do
-    input = gets.chomp.downcase
-    expect(repeat).to eql(input = gets.chomp.downcase)
+describe '#introduction' do
+  it 'it shows the introduction' do
+    expect(introduction).to eql(puts("Welcome to TicTacToe \n\n"))
   end
 end
